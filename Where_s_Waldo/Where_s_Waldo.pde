@@ -15,7 +15,16 @@ println("X: " + mouseX + " Y: " + mouseY);
 println("waldo found!"); 
       }
       // 7. If the mouse is on Waldo, print “Waldo found!”
-
+if(mousePressed&&mouseX>173&&mouseX<186&&mouseY<186&&mouseY>153){
+  
+  System.out.println("Waldo found!");
+  
+  playWoohoo();
+}
+else if(mousePressed){
+  
+playDoh();  
+}
       // 8. If Waldo is found, also use the method below to play “Woohoo”
       // Change the name of the sound file if you need to 
       // 9. If the mouse is pressed and they’re not on Waldo, play “Doh”
