@@ -7,6 +7,7 @@ boolean f1 =false;
 		String c = JOptionPane.showInputDialog(null, "You entered a dungeon enter a color red, green, blue");
 
 		if (c.equals("red")) {
+			c.equalsIgnoreCase("red");
 			JOptionPane.showMessageDialog(null, " you die from a deadly trap");
 			f1=false;
 		} else if (c.equals("blue")) {
